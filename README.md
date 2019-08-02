@@ -54,4 +54,10 @@ Generate the videos used in the article
 make 7-video
 ```
 
-To generate the data used in the last chart run the R script
+To generate the data used in the last chart run the R script.
+
+## license
+
+feel free to re-use and re-mix as you like.
+
+CC-0
