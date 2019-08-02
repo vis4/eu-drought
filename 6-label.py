@@ -6,8 +6,8 @@ import os
 
 months = 'January,February,March,April,May,June,July,August,September,October,November,December'.split(',')
 
-font1 = ImageFont.truetype("Roboto-Light.ttf", 70)
-font2 = ImageFont.truetype("Roboto-Light.ttf", 50)
+font1 = ImageFont.truetype("fonts/Roboto-Light.ttf", 70)
+font2 = ImageFont.truetype("fonts/Roboto-Light.ttf", 50)
 
 index = 0
 
