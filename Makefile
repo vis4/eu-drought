@@ -23,5 +23,5 @@
 
 7-video:
 	mkdir -p output
-	ffmpeg -y -r 12 -i labeled/frame-%03d.png -f webm -speed 8 -deadline realtime -cpu-used -8 -pix_fmt yuv420p output/video.webm
-	ffmpeg -y -r 12 -i labeled/frame-%03d.png -f mp4 -c:v libx264 -crf 36 -pix_fmt yuv420p output/video.mp4
+	ffmpeg -y -r 12 -i labeled/frame-%03d.png -vf "scale=-2:720:flags=lanczos" -f webm -speed 8 -deadline realtime -cpu-used -8 -pix_fmt yuv420p output/video.webm
+	ffmpeg -y -r 12 -i labeled/frame-%03d.png -vf "scale=-2:720:flags=lanczos" -f mp4  -vcodec libx264 -profile:v main -level 3.1 -preset medium -crf 28 -x264-params ref=4 -c:a none -pix_fmt yuv420p -movflags +faststart output/video.mp4

@@ -88,6 +88,16 @@
         top: 2em;
         font-size: 14px;
     }
+    @media (max-width: 600px) {
+        .controls {
+            right: auto;
+            left: 0;
+            top: -50px;
+        }
+        .video {
+            margin-top: 60px;
+        }
+    }
     .controls button {
         background: none;
         border: none;
@@ -112,7 +122,7 @@
     <header>
         <h1 class="width">Almost half of Europe's* soil is dryer than normal</h1>
 
-        <div class="byline width">By Gregor Aisch, <time pubdate="pubdate">August 1st, 2019</time></div>
+        <div class="byline width">By Gregor Aisch, <time datetime="2019-08-02T18:03:00+01:00" pubdate="pubdate">August 2nd, 2019</time></div>
     </header>
 
     <p>Once again, Europe is seeing one of the hottest summers since beginning of temperature recording. The record heat also comes with record drought. But how bad is it really?</p>
@@ -126,15 +136,17 @@
         <Legend />
     </div>
 
-    <div class="full-width" style="position: relative;">
-        <video on:loadedmetadata={videoMetaLoaded} bind:this={video} style="width: 100%" width="1000" src="output.mp4"
+    <div class="video full-width" style="position: relative;">
+        <video on:loadedmetadata={videoMetaLoaded} bind:this={video} style="width: 100%" width="600" src="output.mp4" type="video/mp4"
+            preload="auto"
             bind:currentTime={time}
             bind:duration
             bind:paused
             bind:playbackRate
+            playsinline
+            muted
             on:click={videoClick}
             >
-            <!-- <source src="output.mp4" type="video/mp4"> -->
             <source src="output.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
@@ -177,7 +189,7 @@
         <iframe class="width" title="Almost half of Europe is dryer than normal" aria-label="Interactive line chart" id="datawrapper-chart-eRRwo" src="//datawrapper.dwcdn.net/eRRwo/1/" scrolling="no" frameborder="0" style="width: 100%;border: none;" height="490"></iframe>
     </div>
 
-    <p>If you want to look at the scripts I wrote to download, process and analyse the map images, feel free to check out this Github repository. Feel free to re-use or re-mix the images/video as you like.</p>
+    <p>If you want to look at the scripts I wrote to download, process and analyse the map images, feel free to check out <a href="https://github.com/vis4/eu-drought">this Github repository</a>. It also contains the source code for this article and the visualizations. Feel free to re-use or re-mix the images/video as you like.</p>
 
     <footer class="width" style="border-top: 1px solid #ddd; margin-top: 2em; padding-top: 1em">
         <p style="font-style: italic; font-size: 14px; color:#777">* when I say "Europe" throughout this article, I am actually referring to Europe and the  Mediterranean coastal regions of Africa. I don't know why the EDO is including them in their maps but I decided against removing them from the analysis. After all, climate change also doesn't really care about the borders of Europe.</p>

@@ -12,7 +12,7 @@
 
     const padding = { top: 20, right: 25, bottom: 20, left: 25 };
 
-    let width = 500;
+    let width = 300;
     let height = 180;
 
     $: xScale = scaleTime()
@@ -80,10 +80,6 @@
         return year % 10 === 0 ? year : '\''+String(year).substr(2)
     }
 
-    function formatMobile() {
-        return tick.getFullYear();
-    }
-
     let chartDiv;
     function setFrame(event) {
         let x= event.clientX - chartDiv.getBoundingClientRect().left;
@@ -108,7 +104,7 @@
             {#each xTicks as tick}
                 <g class="tick tick-{ tick }" transform="translate({xScale(tick)},{height})">
                     <line y1="-{height}" y2="-{padding.bottom}" x1="0" x2="0"></line>
-                    <text y="-2">{width > 380 ? format(tick) : formatMobile(tick)}</text>
+                    <text y="-2">{format(tick)}</text>
                 </g>
             {/each}
         </g>

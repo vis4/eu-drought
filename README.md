@@ -1,6 +1,6 @@
 # eu-drought
 
-Please have a look at [this related article with interactive graphics](https://vis4.net/drought) first :)
+Please have a look at [this related article with interactive graphics](https://vis4.net/drought-in-europe) first :)
 
 ## pre-requisites
 
