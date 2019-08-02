@@ -1,7 +1,6 @@
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
-import numpy as np
 import os
 
 months = 'January,February,March,April,May,June,July,August,September,October,November,December'.split(',')
@@ -31,15 +30,3 @@ for file in sorted(os.listdir('resized')):
     if file[-4:] == '.png':
         run('resized/'+file)
 
-
-
-#for pixel in im.getdata():
-#    k = '%d-%d-%d-%d' % pixel
-#    if k in counts:
-#        counts[k] += 1
-#    else:
-#        counts[k] = 1
-#    if k != '0-0-0-0':
-#        opaque += 1
-
-#print(counts)
