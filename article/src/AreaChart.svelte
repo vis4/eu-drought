@@ -95,10 +95,8 @@
     let mouseDate = null;
 </script>
 
-<svelte:window bind:innerWidth={width} />
-
-<div on:mouseenter={() => mouseOver = true} on:mouseleave={() => mouseOver=false} on:mousemove={onMouseMove} class="chart" bind:this={chartDiv} on:click={setFrame}>
-    <svg width={width-20} {height}>
+<div on:mouseenter={() => mouseOver = true} on:mouseleave={() => mouseOver=false} on:mousemove={onMouseMove} class="chart" bind:this={chartDiv} on:click={setFrame} bind:clientWidth={width}>
+    <svg width={width-padding.right} {height}>
         <!-- x axis -->
         <g class="axis x-axis">
             {#each xTicks as tick}
@@ -109,7 +107,7 @@
             {/each}
         </g>
 
-        <rect {width} height="70" style="fill:url(#top)" />
+        <rect width={width} height="70" style="fill:url(#top)" />
         <!-- y axis -->
         <g class="axis y-axis" transform="translate(0, {padding.top})">
             {#each yTicks as tick}
@@ -152,6 +150,11 @@
 </div>
 
 <style>
+    .chart {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     svg {
     }
     .tick {
