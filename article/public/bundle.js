@@ -3538,13 +3538,13 @@ var app = (function () {
     			attr(line, "x1", "0");
     			attr(line, "x2", "0");
     			attr(line, "class", "svelte-1cea9ej");
-    			add_location(line, file, 103, 20, 3216);
+    			add_location(line, file, 103, 20, 3236);
     			attr(text_1, "y", "-2");
     			attr(text_1, "class", "svelte-1cea9ej");
-    			add_location(text_1, file, 104, 20, 3302);
+    			add_location(text_1, file, 104, 20, 3322);
     			attr(g, "class", g_class_value = "tick tick-" + ctx.tick + " svelte-1cea9ej");
     			attr(g, "transform", g_transform_value = "translate(" + ctx.xScale(ctx.tick) + "," + height + ")");
-    			add_location(g, file, 102, 16, 3118);
+    			add_location(g, file, 102, 16, 3138);
     		},
 
     		m: function mount(target, anchor) {
@@ -3587,10 +3587,10 @@ var app = (function () {
     			tspan1 = svg_element("tspan");
     			t_1 = text("wetter than normal");
     			attr(tspan0, "dx", "3");
-    			add_location(tspan0, file, 121, 24, 4085);
+    			add_location(tspan0, file, 121, 24, 4105);
     			attr(tspan1, "dx", "3");
     			attr(tspan1, "class", "wetter svelte-1cea9ej");
-    			add_location(tspan1, file, 122, 24, 4141);
+    			add_location(tspan1, file, 122, 24, 4161);
     		},
 
     		m: function mount(target, anchor) {
@@ -3620,10 +3620,10 @@ var app = (function () {
     			tspan1 = svg_element("tspan");
     			t_1 = text("dryer than normal");
     			attr(tspan0, "dx", "3");
-    			add_location(tspan0, file, 118, 24, 3902);
+    			add_location(tspan0, file, 118, 24, 3922);
     			attr(tspan1, "dx", "3");
     			attr(tspan1, "class", "dryer svelte-1cea9ej");
-    			add_location(tspan1, file, 119, 24, 3958);
+    			add_location(tspan1, file, 119, 24, 3978);
     		},
 
     		m: function mount(target, anchor) {
@@ -3664,14 +3664,14 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr(line, "x2", "100%");
     			attr(line, "class", "svelte-1cea9ej");
-    			add_location(line, file, 114, 20, 3712);
-    			add_location(tspan, file, 116, 24, 3794);
+    			add_location(line, file, 114, 20, 3732);
+    			add_location(tspan, file, 116, 24, 3814);
     			attr(text_1, "y", "-4");
     			attr(text_1, "class", "svelte-1cea9ej");
-    			add_location(text_1, file, 115, 20, 3756);
+    			add_location(text_1, file, 115, 20, 3776);
     			attr(g, "class", g_class_value = "tick tick-" + ctx.tick + " svelte-1cea9ej");
     			attr(g, "transform", g_transform_value = "translate(0, " + (ctx.yScale(ctx.tick) - ctx.padding.bottom) + ")");
-    			add_location(g, file, 113, 16, 3605);
+    			add_location(g, file, 113, 16, 3625);
     		},
 
     		m: function mount(target, anchor) {
@@ -3725,7 +3725,7 @@ var app = (function () {
     			path = svg_element("path");
     			attr(path, "class", path_class_value = "path-area " + ctx.a.id + " svelte-1cea9ej");
     			attr(path, "d", path_d_value = ctx.a.d);
-    			add_location(path, file, 130, 12, 4378);
+    			add_location(path, file, 130, 12, 4398);
     		},
 
     		m: function mount(target, anchor) {
@@ -3759,7 +3759,7 @@ var app = (function () {
     			path = svg_element("path");
     			attr(path, "class", path_class_value = "path-area " + ctx.a.id + " svelte-1cea9ej");
     			attr(path, "d", path_d_value = ctx.a.d);
-    			add_location(path, file, 136, 12, 4515);
+    			add_location(path, file, 136, 12, 4535);
     		},
 
     		m: function mount(target, anchor) {
@@ -3785,7 +3785,7 @@ var app = (function () {
     }
 
     function create_fragment(ctx) {
-    	var div, svg, g0, rect, g1, g1_transform_value, g2, g3, g5, g4, line0, g4_transform_value, line1, line1_transform_value, line1_y__value, line1_y__value_1, div_resize_listener, dispose;
+    	var div, svg, g0, rect, g1, g1_transform_value, g2, g3, g5, g4, line0, g4_transform_value, line1, line1_transform_value, line1_y__value, line1_y__value_1, svg_width_value, div_resize_listener, dispose;
 
     	var each_value_3 = ctx.xTicks;
 
@@ -3853,31 +3853,31 @@ var app = (function () {
     			line0 = svg_element("line");
     			line1 = svg_element("line");
     			attr(g0, "class", "axis x-axis svelte-1cea9ej");
-    			add_location(g0, file, 100, 8, 3043);
+    			add_location(g0, file, 100, 8, 3063);
     			attr(rect, "width", ctx.width);
     			attr(rect, "height", "70");
     			set_style(rect, "fill", "url(#top)");
-    			add_location(rect, file, 109, 8, 3400);
+    			add_location(rect, file, 109, 8, 3420);
     			attr(g1, "class", "axis y-axis");
     			attr(g1, "transform", g1_transform_value = "translate(0, " + ctx.padding.top + ")");
-    			add_location(g1, file, 111, 8, 3490);
+    			add_location(g1, file, 111, 8, 3510);
     			attr(g2, "class", "full svelte-1cea9ej");
-    			add_location(g2, file, 128, 8, 4317);
-    			add_location(g3, file, 134, 8, 4467);
+    			add_location(g2, file, 128, 8, 4337);
+    			add_location(g3, file, 134, 8, 4487);
     			attr(line0, "x2", "100%");
     			attr(line0, "class", "svelte-1cea9ej");
-    			add_location(line0, file, 142, 16, 4718);
+    			add_location(line0, file, 142, 16, 4738);
     			attr(g4, "class", "tick tick-0 svelte-1cea9ej");
     			attr(g4, "transform", g4_transform_value = "translate(0, " + ctx.yScale(0) + ")");
-    			add_location(g4, file, 141, 12, 4640);
+    			add_location(g4, file, 141, 12, 4660);
     			attr(g5, "class", "axis y-axis");
-    			add_location(g5, file, 140, 8, 4604);
+    			add_location(g5, file, 140, 8, 4624);
     			attr(line1, "class", "cursor svelte-1cea9ej");
     			attr(line1, "transform", line1_transform_value = "translate(" + ctx.xScale(ctx.mouseOver ? ctx.mouseDate : toDate(ctx.curFrame)) + ",0)");
     			attr(line1, "y1", line1_y__value = ctx.yScale(0.4));
     			attr(line1, "y2", line1_y__value_1 = height-ctx.padding.bottom);
-    			add_location(line1, file, 146, 8, 4781);
-    			attr(svg, "width", ctx.width);
+    			add_location(line1, file, 146, 8, 4801);
+    			attr(svg, "width", svg_width_value = ctx.width-ctx.padding.right);
     			attr(svg, "height", height);
     			attr(svg, "class", "svelte-1cea9ej");
     			add_location(svg, file, 98, 4, 2988);
@@ -4034,8 +4034,8 @@ var app = (function () {
     				attr(line1, "y1", line1_y__value);
     			}
 
-    			if (changed.width) {
-    				attr(svg, "width", ctx.width);
+    			if ((changed.width) && svg_width_value !== (svg_width_value = ctx.width-ctx.padding.right)) {
+    				attr(svg, "width", svg_width_value);
     			}
     		},
 

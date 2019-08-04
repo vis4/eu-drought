@@ -96,7 +96,7 @@
 </script>
 
 <div on:mouseenter={() => mouseOver = true} on:mouseleave={() => mouseOver=false} on:mousemove={onMouseMove} class="chart" bind:this={chartDiv} on:click={setFrame} bind:clientWidth={width}>
-    <svg {width} {height}>
+    <svg width={width-padding.right} {height}>
         <!-- x axis -->
         <g class="axis x-axis">
             {#each xTicks as tick}
