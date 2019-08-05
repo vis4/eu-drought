@@ -122,7 +122,7 @@
     <header>
         <h1 class="width">Almost half of Europe's* soil is dryer than normal</h1>
 
-        <div class="byline width">By Gregor Aisch, <time datetime="2019-08-02T18:03:00+01:00" pubdate="pubdate">August 2nd, 2019</time></div>
+        <div class="byline width">By Gregor Aisch, <time datetime="2019-08-02T18:03:00+01:00" pubdate="pubdate">August 2, 2019</time> (last updated <time datetime="2019-08-05T11:03:00+01:00">August 5, 2019</time>)</div>
     </header>
 
     <p>Once again, Europe is seeing one of the hottest summers since beginning of temperature recording. The record heat also comes with record drought. But how bad is it really?</p>
