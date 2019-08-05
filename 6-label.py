@@ -20,8 +20,7 @@ def run(file):
     print(year, month)
     draw.text((90, 90), year, (60,60,60), font=font1)
     draw.text((90, 170), months[month-1], (60,60,60), font=font2)
-    im2 = im.convert('P')
-    im2.save('labeled/frame-%03d.png' % index)
+    im.save('labeled/frame-%03d.png' % index)
     index += 1
     # print( + (',%.4f'*6) % tuple(data_pct))
 
