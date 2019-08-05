@@ -35,7 +35,7 @@
         // }
     }
 
-    const frames = 884;
+    const frames = 885;
 
     function setFrame(event) {
         // console.log(event.detail.frame/frames * duration)

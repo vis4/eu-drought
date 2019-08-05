@@ -5,7 +5,7 @@
 
     const dispatch = createEventDispatcher();
 
-    export let frames = 884;
+    export let frames = 885;
     export let curFrame = 0;
     export let data = [];
     $: filteredData = data.slice(0, mouseOver ? toFrame(mouseDate) : curFrame);
