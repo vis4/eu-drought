@@ -137,7 +137,7 @@
     </div>
 
     <div class="video full-width" style="position: relative;">
-        <video on:loadedmetadata={videoMetaLoaded} bind:this={video} style="width: 100%" width="600" src="output.mp4" type="video/mp4"
+        <video on:loadedmetadata={videoMetaLoaded} bind:this={video} style="width: 100%" width="600" src="video.mp4" type="video/mp4"
             preload="auto"
             bind:currentTime={time}
             bind:duration
@@ -147,7 +147,7 @@
             muted
             on:click={videoClick}
             >
-            <source src="output.webm" type="video/webm">
+            <source src="video.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
 
